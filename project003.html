@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project003</title>
+</head>
+<style>
+    *{
+          box-sizing: border-box;
+          /* margin: 0;
+          padding: 0; */
+      }
+      html, body{
+          width: 100%;
+          height: 100%;
+      }
+      body{
+          background-color: burlywood;
+      }
+      .head{
+          width: 25%;
+          margin: 10rem auto 0.5rem auto;
+          padding: 1.5rem;
+          background-color: rgba(255, 68, 0, 0.753);
+          color: white;
+          border-radius: 1rem;
+      }
+      #lit{
+          width: 10%;
+          padding: 0.5rem;
+          float: right;
+          color: black;
+          background-color: black;
+          border: thin solid rgba(255, 68, 0, 0.753);
+          border-radius: 1rem;
+      }
+      #git{
+          width: 10%;
+          padding: 0.4rem;
+          float: right;
+          color: rgba(255, 68, 0, 0.753);
+          border: thin solid rgb(251, 251, 251);
+          border-radius: 1rem;
+      }
+      .main{
+          width: 25%;
+          margin: 0.5rem auto;
+          padding: 1.5rem;
+          color: aliceblue;
+          background-color: aliceblue;
+          color: rgb(0, 0, 0);
+          border-radius: 1rem;
+      }
+      h2{
+          margin-top: 0.3rem;
+          margin-bottom: 0;
+      }
+      button{
+          width: 11%;
+          margin-right: 0.5rem;
+          margin-bottom: 0;
+          padding-top: 50%;
+          background-color: rgba(255, 68, 0, 0.753);
+          border: none;
+          border-radius: 0.3rem;
+          cursor: pointer;
+      }
+      button:hover{
+          background-color: aquamarine;
+      }
+      h3{
+        margin-top: 0;
+      }
+      #week span{
+          width: 10%;
+        margin-right: 2.5rem;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: xx-small;
+        font-weight: lighter;
+      }
+      .star{
+          float: right;
+      }
+      #mum{
+          text-align: center;
+          margin: 0 40%;
+      }
+      .one{
+        color: rgba(255, 68, 0, 0.753);
+      }
+      /* For mobile phones: */
+    @media only screen and (max-width: 768px) {
+        .col-12 {width: 100%;}
+    }
+</style>
+<body class="col-12">
+    <div class="head">
+        <p id="lit">o</p>
+        <p id="git">o</p>
+        <small>My balance</small>
+        <h2>$921.88</h2>
+    </div>
+    <div class="main">
+        <h3>Spending - Last 7 days</h3>
+        <div class="bar">
+            <button style="padding-top: 10%;" onclick="this.style.backgroundColor = 'rgb(243, 139, 102)'"></button>
+            <button style="padding-top: 23%;" onclick="this.style.backgroundColor = 'rgb(243, 139, 102)'"></button>
+            <button style="padding-top: 40%;" title="$62.30" onclick="this.style.backgroundColor = 'rgb(243, 139, 102)'"></button>
+            <button style="padding-top: 20%;" title="$31.07" onclick="this.style.backgroundColor = 'rgb(243, 139, 102)'"></button>
+            <button style="padding-top: 17%;" onclick="this.style.backgroundColor = 'rgb(243, 139, 102)'"></button>
+            <button style="padding-top: 30%;" onclick="this.style.backgroundColor = 'rgb(243, 139, 102)'"></button>
+            <button style="padding-top: 18%;" onclick="this.style.backgroundColor = 'rgb(243, 139, 102)'"></button>
+        </div>
+        <small id="week"> <span>Mon</span><span>Tue</span><span>wed</span><span>Thu</span><span>Fri</span><span>Sat</span><Span>Sun</Span></small>
+        <hr style="margin: 1.3rem 0;">
+        <div class="star">
+            <div></div>
+            <small style="font-weight: 900;text-align: left;">+2.4%</small>
+            <div><small>from last month</small></div>
+            
+        </div>
+        <div class="stay">
+            <small>Total this month</small>
+            <h2 style="font-weight: 900;">$478.77</h2>
+        </div>
+    </div>
+    <br><br><br>
+    <small id="mum">challenge by <span class="one">Frontend Mentor</span>, coded by <span class="one">God'stime</span>.</small>
+    
+</body>
+</html>
